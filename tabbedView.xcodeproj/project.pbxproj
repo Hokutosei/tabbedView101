@@ -14,6 +14,10 @@
 		FAD5832E1A8BC0B800558982 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAD5832D1A8BC0B800558982 /* Images.xcassets */; };
 		FAD583311A8BC0B800558982 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAD5832F1A8BC0B800558982 /* LaunchScreen.xib */; };
 		FAD5833D1A8BC0B800558982 /* tabbedViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD5833C1A8BC0B800558982 /* tabbedViewTests.swift */; };
+		FAD583471A8BC34600558982 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD583461A8BC34600558982 /* ProfileViewController.swift */; };
+		FAD583491A8BC78D00558982 /* TestNextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD583481A8BC78D00558982 /* TestNextViewController.swift */; };
+		FAD5834B1A8BCB6A00558982 /* TableDataStoreTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD5834A1A8BCB6A00558982 /* TableDataStoreTestViewController.swift */; };
+		FAD5834D1A8D18DA00558982 /* UserLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD5834C1A8D18DA00558982 /* UserLocationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +42,10 @@
 		FAD583361A8BC0B800558982 /* tabbedViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tabbedViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAD5833B1A8BC0B800558982 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FAD5833C1A8BC0B800558982 /* tabbedViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tabbedViewTests.swift; sourceTree = "<group>"; };
+		FAD583461A8BC34600558982 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		FAD583481A8BC78D00558982 /* TestNextViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestNextViewController.swift; sourceTree = "<group>"; };
+		FAD5834A1A8BCB6A00558982 /* TableDataStoreTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableDataStoreTestViewController.swift; sourceTree = "<group>"; };
+		FAD5834C1A8D18DA00558982 /* UserLocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserLocationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,9 +91,13 @@
 				FAD583261A8BC0B800558982 /* FirstViewController.swift */,
 				FAD583281A8BC0B800558982 /* SecondViewController.swift */,
 				FAD5832A1A8BC0B800558982 /* Main.storyboard */,
+				FAD5834A1A8BCB6A00558982 /* TableDataStoreTestViewController.swift */,
+				FAD5834C1A8D18DA00558982 /* UserLocationViewController.swift */,
 				FAD5832D1A8BC0B800558982 /* Images.xcassets */,
 				FAD5832F1A8BC0B800558982 /* LaunchScreen.xib */,
 				FAD583221A8BC0B800558982 /* Supporting Files */,
+				FAD583461A8BC34600558982 /* ProfileViewController.swift */,
+				FAD583481A8BC78D00558982 /* TestNextViewController.swift */,
 			);
 			path = tabbedView;
 			sourceTree = "<group>";
@@ -216,8 +228,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAD583291A8BC0B800558982 /* SecondViewController.swift in Sources */,
+				FAD5834B1A8BCB6A00558982 /* TableDataStoreTestViewController.swift in Sources */,
+				FAD583491A8BC78D00558982 /* TestNextViewController.swift in Sources */,
 				FAD583251A8BC0B800558982 /* AppDelegate.swift in Sources */,
+				FAD583471A8BC34600558982 /* ProfileViewController.swift in Sources */,
 				FAD583271A8BC0B800558982 /* FirstViewController.swift in Sources */,
+				FAD5834D1A8D18DA00558982 /* UserLocationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
