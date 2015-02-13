@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>0E1950E8-722A-4541-A22A-A6244F1D90B7</string>
+	<key>IDESourceControlProjectName</key>
+	<string>tabbedView</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>B3B68DA10F86707EE0DE941913C6B6F7A87F21FA</key>
+		<string>https://github.com/Hokutosei/tabbedView101.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>tabbedView.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>B3B68DA10F86707EE0DE941913C6B6F7A87F21FA</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/Hokutosei/tabbedView101.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>B3B68DA10F86707EE0DE941913C6B6F7A87F21FA</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>B3B68DA10F86707EE0DE941913C6B6F7A87F21FA</string>
+			<key>IDESourceControlWCCName</key>
+			<string>tabbedView</string>
+		</dict>
+	</array>
+</dict>
+</plist>

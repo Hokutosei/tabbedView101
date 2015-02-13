@@ -18,6 +18,7 @@
 		FAD583491A8BC78D00558982 /* TestNextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD583481A8BC78D00558982 /* TestNextViewController.swift */; };
 		FAD5834B1A8BCB6A00558982 /* TableDataStoreTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD5834A1A8BCB6A00558982 /* TableDataStoreTestViewController.swift */; };
 		FAD5834D1A8D18DA00558982 /* UserLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD5834C1A8D18DA00558982 /* UserLocationViewController.swift */; };
+		FAD5834F1A8E51C800558982 /* MapAltViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD5834E1A8E51C800558982 /* MapAltViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		FAD583481A8BC78D00558982 /* TestNextViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestNextViewController.swift; sourceTree = "<group>"; };
 		FAD5834A1A8BCB6A00558982 /* TableDataStoreTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableDataStoreTestViewController.swift; sourceTree = "<group>"; };
 		FAD5834C1A8D18DA00558982 /* UserLocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserLocationViewController.swift; sourceTree = "<group>"; };
+		FAD5834E1A8E51C800558982 /* MapAltViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapAltViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 				FAD583261A8BC0B800558982 /* FirstViewController.swift */,
 				FAD583281A8BC0B800558982 /* SecondViewController.swift */,
 				FAD5832A1A8BC0B800558982 /* Main.storyboard */,
+				FAD5834E1A8E51C800558982 /* MapAltViewController.swift */,
 				FAD5834A1A8BCB6A00558982 /* TableDataStoreTestViewController.swift */,
 				FAD5834C1A8D18DA00558982 /* UserLocationViewController.swift */,
 				FAD5832D1A8BC0B800558982 /* Images.xcassets */,
@@ -230,6 +233,7 @@
 				FAD583291A8BC0B800558982 /* SecondViewController.swift in Sources */,
 				FAD5834B1A8BCB6A00558982 /* TableDataStoreTestViewController.swift in Sources */,
 				FAD583491A8BC78D00558982 /* TestNextViewController.swift in Sources */,
+				FAD5834F1A8E51C800558982 /* MapAltViewController.swift in Sources */,
 				FAD583251A8BC0B800558982 /* AppDelegate.swift in Sources */,
 				FAD583471A8BC34600558982 /* ProfileViewController.swift in Sources */,
 				FAD583271A8BC0B800558982 /* FirstViewController.swift in Sources */,

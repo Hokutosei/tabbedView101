@@ -132,6 +132,48 @@
             </objects>
             <point key="canvasLocation" x="812" y="1974"/>
         </scene>
+        <!--Map Alt View Controller-->
+        <scene sceneID="Kbo-zE-T8y">
+            <objects>
+                <viewController id="qdj-9M-aMW" customClass="MapAltViewController" customModule="tabbedView" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xxf-so-g9c"/>
+                        <viewControllerLayoutGuide type="bottom" id="2hu-Te-dfJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="n8c-xv-dLB">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label autoresizesSubviews="NO" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Distance" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xCi-6K-BTa">
+                                <rect key="frame" x="267" y="433" width="67" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="VVD-76-eNX">
+                                <rect key="frame" x="-6" y="64" width="606" height="361"/>
+                            </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sxi-Eq-RGD">
+                                <rect key="frame" x="279" y="468" width="37" height="30"/>
+                                <state key="normal" title="Track">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="trackButton:" destination="qdj-9M-aMW" eventType="touchUpInside" id="c0k-MC-qSh"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="distanceLabel" destination="xCi-6K-BTa" id="N8n-Qa-AIl"/>
+                        <outlet property="mapView" destination="VVD-76-eNX" id="WeC-Qd-TS8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qxJ-T2-huF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1587" y="1974"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
             <objects>
@@ -186,6 +228,15 @@
                                 </state>
                                 <connections>
                                     <segue destination="s4U-hY-vDM" kind="show" id="Tvi-gG-tXf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="URX-Qt-bKi">
+                                <rect key="frame" x="40" y="257" width="39" height="30"/>
+                                <state key="normal" title="Map2">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="qdj-9M-aMW" kind="show" id="qDd-A8-QwX"/>
                                 </connections>
                             </button>
                         </subviews>
