@@ -38,7 +38,7 @@ class UserLocationViewController: UIViewController, CLLocationManagerDelegate {
                 println("error: " + error.localizedDescription)
                 return
             }
-            println(placemarks)
+//            println(placemarks)
             if placemarks.count > 0 {
                 let pm = placemarks[0] as CLPlacemark
                 self.displayLocationInfo(pm)
