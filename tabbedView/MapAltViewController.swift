@@ -10,7 +10,7 @@ import UIKit
 import MapKit
 import CoreLocation
 
-class MapAltViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate {
+class MapAltViewController: UIViewController, CLLocationManagerDelegate {
 
     @IBOutlet weak var mapView: MKMapView!
     @IBOutlet weak var distanceLabel: UILabel!
@@ -20,6 +20,7 @@ class MapAltViewController: UIViewController, CLLocationManagerDelegate, MKMapVi
     var oldLocation: CLLocation?
     var totalDistance: Double = 0
     var isUserTracking: Bool = false
+    var myLocations: [Double] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,14 +42,22 @@ class MapAltViewController: UIViewController, CLLocationManagerDelegate, MKMapVi
         locationManager.activityType = .Fitness
     }
     
-    @IBAction func trackButton(sender: AnyObject) {
+    var cLocations: [CLLocationCoordinate2D]! = []
+    @IBAction func trackButtonPressed(sender: UIButton) {
         if isUserTracking {
-            trackButton.setTitle("track my location", forState: .Normal)
+            sender.setTitle("track my location", forState: .Normal)
             distanceLabel.text = "0.0km"
             isUserTracking = false
+            println(myLocations)
+            var coordinates = cLocations.map({ (location: CLLocation) ->
+                CLLocationCoordinate2D in
+                return location.coordinate
+            })
+            var polyline = MKPolyline(coordinates: &coordinates,
+                count: cLocations.count)
         } else {
             isUserTracking = true
-            trackButton.setTitle("Stop tracking", forState: .Normal)
+            sender.setTitle("Stop Tracking", forState: .Normal)
         }
     }
     
@@ -59,14 +68,19 @@ class MapAltViewController: UIViewController, CLLocationManagerDelegate, MKMapVi
     func locationManager(manager: CLLocationManager!, didUpdateLocations locations: [AnyObject]!) {
         if let firstLocation = locations.first as? CLLocation {
             mapView.setCenterCoordinate(firstLocation.coordinate, animated: true)
-            
+            cLocations.append(firstLocation.coordinate)
             let region = MKCoordinateRegionMakeWithDistance(firstLocation.coordinate, 1000, 1000)
             mapView.setRegion(region, animated: true)
             
             if let oldLocation = oldLocation {
-                let delta: CLLocationDistance = firstLocation.distanceFromLocation(oldLocation)
-                totalDistance += delta
-                updateDistanceLabel()
+                if isUserTracking {
+                    println(firstLocation.coordinate)
+                    let delta: CLLocationDistance = firstLocation.distanceFromLocation(oldLocation)
+                    myLocations.append(delta)
+                    totalDistance += delta
+                    
+                    updateDistanceLabel()
+                }
             }
             
             oldLocation = firstLocation
